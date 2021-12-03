@@ -1,13 +1,111 @@
-/**
- * Minimal Reset
- */
-body {
-	margin: 0;
+/* Höchste Prio Selector */
+:root {
+    /* UI Kit - Variablen */
+ --text-color: red;
 }
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+
+/* Alle Selectoren
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box; /* Use a more-intuitive box-sizing model. */
 }
+
+* {
+    margin: 0; /*  Remove default margin */
+    
+    /* Design Help */
+    border-color: rgb(207, 52, 228);
+    border-width: 1px;
+    border-style: dashed;
+}
+
+/* Größter Selector */
+html, body {
+    height: 100%; /* 3. Allow percentage-based heights in the application */
+}   
+
+
+body {
+    line-height: 1.5; /* Add accessible line-height */
+    -webkit-font-smoothing: antialiased; /* Improve text rendering */
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+    background-color: #05050510;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* Classes  */
+
+.project {
+    margin: 1em;
+    padding: 1em;
+
+    border: 0.25em;
+    border-radius: 1em;
+
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.card__container {
+    display: flex;
+}
+
+.card {
+    width: 128px;
+    height: auto;
+
+    margin: 1em;
+    padding: 1em;
+    
+    border: 0.25em;
+    border-radius: 1em;
+
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+
+}
+.card__image {
+    /* Resposive to container */
+    max-width: 100%; 
+    height: auto;
+
+    width: 70px;
+    
+    border-radius: 8px; 
+
+    
+    /* max-width: 100%;
+    height: auto;
+    */
+
+} 
+
+.card__button {
+
+}
+.card__button:hover {
+ 
+}
+
+.guestlist {
+    margin: 1em;
+    padding: 1em;
+    border: 0.25em;
+    border-radius: 1em;
+
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+}
+
 
