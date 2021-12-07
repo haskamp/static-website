@@ -1,68 +1,158 @@
 /* Höchste Prio Selector */
 :root {
     /* UI Kit - Variablen */
- --text-color: red;
+    --primary-color: #778DA9;
+    --primary-color-variant: #03172c;
+    
+    --secondary-color: #;
+    --second-color-variant: #;
+
+
+    --background-color:#F9F8F8;
+    --surface-color: #E0E1DD;
+
+    --onsurface-color: #0D1B2A;
+
+    --primary-font: 'Roboto', sans-serif;
+    --font-size: 16px;
+    
 }
 
-
-/* Alle Selectoren
-  1. Use a more-intuitive box-sizing model.
-*/
+/* RESET 
+ */
+/* Alle Selectoren */
 *, *::before, *::after {
     box-sizing: border-box; /* Use a more-intuitive box-sizing model. */
+    scroll-behavior: smooth;
 }
 
-* {
+*{
     margin: 0; /*  Remove default margin */
-    
     /* Design Help */
-    border-color: rgb(207, 52, 228);
+    /* border-color: rgb(207, 52, 228);
     border-width: 1px;
-    border-style: dashed;
+    border-style: dashed; */
 }
 
-/* Größter Selector */
+/* Elemente */
 html, body {
     height: 100%; /* 3. Allow percentage-based heights in the application */
 }   
-
 
 body {
     line-height: 1.5; /* Add accessible line-height */
     -webkit-font-smoothing: antialiased; /* Improve text rendering */
     
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     font-weight: bold;
-    font-size: 16px;
+    font-size: var(--font-size);
 
-    background-color: #05050510;
+    background-color: var(--background-color);
 }
 
-h2 {
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* header {
+    background: var(--primary-color);
+    border: 20px;
+    border-color: var(--primary-color-variant);
+} */
+
+main {
+    display: grid;
+}
+
+footer {
+    background-color: var(--primary-font);
+}
+
+
+/* h2 {
+    text-align: center;
     color: rgba(0, 0, 0, 0.75);
+} */
+
+/* Klassen - Selektoren  */
+
+
+
+
+.hero__title {
+  color: white;
+  text-transform: uppercase;
+  font-family: ;
+  display: flex;
+
 }
 
-/* Classes  */
+.hero__name {
+
+}
+
+
+.container {
+    padding: 1em 1em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    list-style: none;
+
+    border: 1px;    
+    
+}
 
 .project {
     margin: 1em;
     padding: 1em;
 
     border: 0.25em;
-    border-radius: 1em;
+    border-radius: 1em; 
 
-    background: #fff;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+    background: var(--surface-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0,0,0,0.25);
 
 }
 
+.project__head {
+    color: --onsurface-color;
+}
 
+.project__heading {
+    background-color: rgba(45, 45, 45, 0.1);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.project_desc {
+    text-align: justify
+}
+
+.project__skill {
+    float: right;
+
+}
+/* CARD */
 .card__container {
     display: flex;
 }
 
 .card {
-    width: 128px;
+    width: 100px;
     height: auto;
 
     margin: 1em;
@@ -71,31 +161,48 @@ h2 {
     border: 0.25em;
     border-radius: 1em;
 
-    background: #fff;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+    background: var(--surface-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0,0,0,0.25);
+
 
 }
 .card__image {
     /* Resposive to container */
     max-width: 100%; 
     height: auto;
-
     width: 70px;
     
     border-radius: 8px; 
-
-    
-    /* max-width: 100%;
-    height: auto;
-    */
-
 } 
+.card__heading {
+    margin-top: 1em;
+}
+.card__content {
+    font-family: sans-serif;
+    font-size: 0.75em;
+}
+
+.link--light {
+   color: rgba(8, 8, 8, 0.25); 
+   font-style: italic;
+   font-size: 0.85em;
+}
+
+.link:hover {
+	text-decoration: underline;
+    font-size: 1em;
+}
 
 .card__button {
+  background: var(--surface-color);
+  border: none;
+  padding: none;
 
 }
 .card__button:hover {
- 
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  
 }
 
 .guestlist {
@@ -104,8 +211,9 @@ h2 {
     border: 0.25em;
     border-radius: 1em;
 
-    background: #fff;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+    background: var(--surface-color);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0,0,0,0.25);
+
 }
 
 
