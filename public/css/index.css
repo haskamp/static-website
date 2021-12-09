@@ -1,0 +1,70 @@
+:root  {
+    --color-primary: #5E75F2;
+    --color-primary--dark: #4B5CBF;
+
+    --color-secondary: #F20587;
+    --color-secondary--dark: #BF046B;
+
+    --color-tertinary: #F2C84B;
+    --color-tertinary--dark: #BF9E3B;
+
+    --color-tertinary:     #3BBFB4;
+    --color-tertinary--dark: #2B8C84;
+}
+
+
+body {
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes  {
+  
+}
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__retro {
+    background-color: var(--color-primary);
+    padding: 20px;
+    border: outset var(--color-primary) ;
+    border-radius: 5px;
+
+    color: black;
+    text-decoration: none;
+}
+
+.nav
+
+.nav__hero {
+    background-color: cyan;
+    padding: 20px;
+    border: outset cyan ;
+    border-radius: 5px;
+
+    color: black;
+    text-decoration: none;
+}
+
+.nav__card {
+    animation-name: card-color;
+    animation-duration: 10s; 
+    animation-iteration-count: infinite;
+
+
+    padding: 20px;
+    border: outset magenta;
+    border-radius: 5px;
+
+    color: black;
+    text-decoration: none;
+}
+
+
+
