@@ -1,0 +1,134 @@
+:root  {
+    --color-primary: #5E75F2;
+    --color-primary--dark: #4B5CBF;
+
+    --color-secondary: #F20587;
+    --color-secondary--dark: #BF046B;
+
+    --color-tertinary: #F2C84B;
+    --color-tertinary--dark: #BF9E3B;
+
+    --color-tertinary:     #3BBFB4;
+    --color-tertinary--dark: #2B8C84;
+
+}
+
+body {
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+/* .nav-bar {
+    position: fixed;
+    top: 100%; 
+    margin-top: -100px;
+    z-index: 5;
+} */
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav:hover {
+
+}
+
+.nav *:active {
+    padding: 2px;
+    box-shadow: 0 0 2px 5px hsla(0, 0, 0, alpha) inset;
+}
+
+
+
+.nav :nth-child(1) {
+    animation: slideIn-left 3s;
+
+
+    background-color: var(--color-primary);
+    padding: 20px;
+    border: outset var(--color-primary) ;
+    border-radius: 5px;
+
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav:nth-child(2) {
+    animation: slideIn-top 3s;
+
+    background-color: var(--color-secondary);
+    padding: 20px;
+    border: outset var(--color-secondary) ;
+    border-radius: 5px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav:nth-child(3) {
+    animation: slideIn-right 3s;
+
+    background-color: var(--color-tertinary);
+    padding: 20px;
+    border: outset var(--color-tertinary) ;
+    border-radius: 5px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+
+@keyframes slideIn-top { 
+    0% {
+        margin-top: 1000%;
+        height: 200%;
+    }
+
+    100% {
+        margin-top: 0%;
+        height: 100%;
+    } 
+}
+@keyframes slideIn-right { 
+    0% {
+        margin-right: 1000%;
+        width: 200%;
+    }
+
+    100% {
+        margin-right 0%;
+        width: 100%;
+    } 
+}
+@keyframes slideIn-bottom { 
+    0% {
+        margin-bottom: 1000%;
+        height: -200%
+    }
+
+    100% {
+        margin-bottom: 0%;
+        height: 100%;
+    } 
+}
+
+@keyframes slideIn-left { 
+    0% {
+        margin-left: 1000%;
+        width: 200%;
+    }
+
+    100% {
+        margin-left: 0%;
+        width: 100%;
+    } 
+}
